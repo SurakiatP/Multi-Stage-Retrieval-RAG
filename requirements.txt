@@ -1,0 +1,40 @@
+# --- Core API ---
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+python-multipart
+pydantic>=2.0
+python-dotenv
+httpx
+
+# --- RAG Framework & LangChain ---
+langchain==0.2.6
+langchain-community==0.2.6
+langchain-core==0.2.10
+langchain-huggingface>=0.0.3
+langchain-text-splitters>=0.2.0
+
+# --- Vector Database & Embeddings ---
+faiss-cpu
+rank_bm25
+sentence-transformers
+
+# --- Document Processing ---
+docling
+pypdfium2
+Pillow
+easyocr
+pythainlp
+
+# --- Utilities ---
+numpy<2.0.0
+
+# --- Build Tools ---
+hatchling
+
+# --- PyTorch (Optional to keep here) ---
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# --- Custom Formats ---
+git+https://github.com/toon-format/toon-python.git
