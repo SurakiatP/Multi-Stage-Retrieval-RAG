@@ -94,32 +94,34 @@ cd corporate-policy-rag
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
 ```
+**Step 2: Install PyTorch FIRST (CUDA Version select for Your GPU)**
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124
 
-**Step 2: Install dependencies**
+**Step 3: Install dependencies**
 ```bash
 pip install -r requirements.txt
 ```
 
-**Step 3: Pull required Ollama models**
+**Step 4: Pull required Ollama models**
 ```bash
 ollama pull scb10x/typhoon2.1-gemma3-4b
 ollama pull qwen2.5:7b-instruct-q4_0
 ```
 
-**Step 4: Configure environment**
+**Step 5: Configure environment**
 ```bash
 cp .env.example .env
 # Edit .env with your settings (see Configuration section)
 ```
 
-**Step 5: Prepare documents**
+**Step 6: Prepare documents**
 ```bash
 # Place PDF files in dataset/ folder
 mkdir -p dataset
 cp your-policies.pdf dataset/
 ```
 
-**Step 6: Process documents and build index**
+**Step 7: Process documents and build index**
 ```
 # Process PDFs and create JSON
 python src/document_processor.py
