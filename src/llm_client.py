@@ -114,7 +114,6 @@ Query:"""
             # Row: source,page,"content"
             context_text += f'  {source},{page},"{content}"\n'
         
-        # --- System Prompt ---
         system_prompt = """You are a Corporate Policy Assistant answering questions using ONLY the provided Context.
 
 CORE RULES:
@@ -125,8 +124,14 @@ CORE RULES:
 5. If answer is not in Context, respond: "I cannot find this information in the provided documents."
 
 CONFLICT RESOLUTION (CRITICAL):
-- If you find conflicting information (e.g., between an old 'Policy 2024' and a new 'Memo 2025'), **PRIORITIZE the document with the LATEST date** or labeled as 'Update/Memo'.
-- Explicitly state that the old rule has been superseded by the new one.
+   - ALWAYS prioritize 'Internal-Memo-2025' or any document labeled 'Update' over older policies.
+   - If a 2025 update exists, state the new rule and briefly mention it replaces the 2024 rule.
+   - If NO 2025 update is found, use the 2024 policy as the current authority.
+
+RESPONSE STYLE:
+   - CONCISENESS & CLARITY: Provide the direct answer in the first sentence. Use simple, professional language that is easy for employees to understand.
+   - ACCURACY: Ensure every figure, date, and condition is 100% accurate based on the context.
+   - NO FLUFF: Avoid unnecessary introductory phrases or repetitive explanations.
 
 EXAMPLES:
 

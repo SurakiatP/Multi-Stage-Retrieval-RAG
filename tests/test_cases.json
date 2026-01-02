@@ -1,0 +1,42 @@
+[
+  {
+    "input": "What is the current mileage rate for business travel?",
+    "expected_output": "The current rate is 12 THB per kilometer, as updated in the Internal Memo 2025. This rate supersedes the previous 8 THB per kilometer stated in the 2024 policy. [Source: Internal-Memo-2025.pdf, Page: 1]"
+  },
+  {
+    "input": "How much is the domestic daily allowance for Level 2 staff?",
+    "expected_output": "A Senior Officer (Level 2) receives a daily allowance of 600 THB for domestic travel, which is a 20% increase from the previous 500 THB rate. [Source: Internal-Memo-2025.pdf, Page: 2]"
+  },
+  {
+    "input": "How many days per week must I work in the office?",
+    "expected_output": "Employees are required to be in the office at least 3 days per week. The mandatory 'Core Days' are Tuesday and Wednesday, while the third day can be chosen from Monday, Thursday, or Friday. [Source: Internal-Memo-2025.pdf, Page: 3]"
+  },
+  {
+    "input": "How many hours do I have to report a lost laptop?",
+    "expected_output": "A lost or stolen device must be reported to IT Security immediately, or within a maximum of 4 hours after discovery. [Source: IT-Security-Policy.pdf, Page: 10]"
+  },
+  {
+    "input": "What are the mandatory core working hours?",
+    "expected_output": "The 'Core Hours' are from 10:00 AM to 04:00 PM, during which all employees must be available for work and collaboration. [Source: Employee-Handbook-2024.pdf, Page: 5]"
+  },
+  {
+    "input": "How long is the employee probation period?",
+    "expected_output": "The probationary period is 119 days. The final evaluation is conducted by a committee between days 115 and 119. [Source: Employee-Handbook-2024.pdf, Page: 2-3]"
+  },
+  {
+    "input": "How many days of annual leave do I get after working for 3 years?",
+    "expected_output": "Employees with 3 to 5 years of service are entitled to 10 days of annual leave per year, with a maximum accumulation of 20 days. [Source: Employee-Handbook-2024.pdf, Page: 15]"
+  },
+  {
+    "input": "What is the vision benefit for Level 3 employees?",
+    "expected_output": "Level 3 employees (Team Lead/Analyst) are entitled to a vision benefit (glasses/contacts) of up to 5,000 THB. [Source: Benefits-Reimbursement-Policy-2024.pdf, Page: 5]"
+  },
+  {
+    "input": "When is the monthly deadline for submitting expense claims?",
+    "expected_output": "All expense claims must be submitted by the 25th of the current month to receive reimbursement in the next payroll cycle. [Source: Internal-Memo-2025.pdf, Page: 4]"
+  },
+  {
+    "input": "How much do I have to pay if my company laptop is stolen?",
+    "expected_output": "If an employee's device is stolen and a police report is provided as evidence, the employee is responsible for paying 20% of the cost. [Source: Employee-Handbook-2024.pdf, Page: 10]"
+  }
+]

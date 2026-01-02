@@ -4,4 +4,4 @@
 *.faiss
 *__pycache__/
 .python-version
-tests/
+.deepeval/

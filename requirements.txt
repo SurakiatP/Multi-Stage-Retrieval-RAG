@@ -38,3 +38,6 @@ torchaudio>=2.0.0
 
 # --- Custom Formats ---
 git+https://github.com/toon-format/toon-python.git
+
+# --- Evaluation ---
+deepeval
