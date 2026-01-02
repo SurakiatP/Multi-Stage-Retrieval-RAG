@@ -34,7 +34,6 @@ hatchling
 # --- PyTorch (Optional to keep here) ---
 torch>=2.0.0
 torchvision>=0.15.0
-torchaudio>=2.0.0
 
 # --- Custom Formats ---
 git+https://github.com/toon-format/toon-python.git
