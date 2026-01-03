@@ -95,7 +95,9 @@ python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
 ```
 **Step 2: Install PyTorch FIRST (CUDA Version select for Your GPU)**
+```bash
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124
+```
 
 **Step 3: Install dependencies**
 ```bash
